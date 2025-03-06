@@ -1,0 +1,89 @@
+/* Definir o fundo com a foto do casal */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('/minha-foto.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Caixa do conteúdo */
+.container {
+    width: 80%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilizar o título */
+h1 {
+    color: #ff4081;
+    font-size: 24px;
+}
+
+.music-button,
+.enter-button,
+input {
+    width: 100%; /* Mantém todos alinhados e preenchendo a largura */
+    max-width: 370px; /* Aumentamos um pouco mais */
+    padding: 22px; /* Um pouco mais de altura */
+    margin-top: 10px;
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 22px; /* Texto maior */
+    box-sizing: border-box; /* Evita desalinhamento pelo padding */
+}
+
+
+
+/* Estilo do campo de senha */
+input {
+    width: 100%; /* Faz o campo ocupar toda a largura disponível */
+    max-width: 350px; /* Mantém um tamanho razoável */
+    padding: 20px; /* Aumenta a altura do campo */
+    border: 2px solid #ddd; /* Mantém a borda visível */
+    text-align: center;
+    font-size: 22px; /* Texto maior */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Garante que padding não quebre o alinhamento */
+}
+
+
+
+/* Botão de música */
+.music-button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+}
+
+.music-button:hover {
+    background-color: #ff80ab;
+    transform: scale(1.05);
+}
+
+/* Botão de entrar com animação e tamanho ajustado */
+.enter-button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+}
+
+.enter-button:hover {
+    background-color: pink;
+    transform: scale(1.1);
+}
+

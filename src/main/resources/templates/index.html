@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Nosso Amor 💖</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vinda, meu amor! 💕</h1>
+
+        <!-- Botão para tocar e pausar a música -->
+        <button class="music-button" id="musicControl" onclick="toggleMusic()">🎶 Tocar Nossa Música 🎶</button>
+
+        <!-- Formulário de Senha -->
+        <form action="/verificar" method="post">
+            <input type="password" name="senha" placeholder="Quando foi o nosso começo..." required>
+            <button type="submit" class="enter-button">Entrar</button>
+        </form>
+    </div>
+
+    <!-- Música do Jorge & Mateus -->
+    <audio id="loveSong" src="/amo-noite-e-dia.mp3"></audio>
+
+    <script>
+        var music = document.getElementById("loveSong");
+        var musicControl = document.getElementById("musicControl");
+
+        // Define o volume inicial da música para 5%
+        music.volume = 0.05;
+
+        function toggleMusic() {
+            if (music.paused) {
+                music.play();
+                musicControl.innerHTML = "⏸️ Pausar Música ⏸️";
+            } else {
+                music.pause();
+                musicControl.innerHTML = "🎶 Tocar Nossa Música 🎶";
+            }
+        }
+    </script>
+</body>
+</html>

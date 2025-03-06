@@ -1,0 +1,136 @@
+/* Definir o fundo com a imagem */
+body {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    background: url('/fotos/fundorosa.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Caixa principal do conteúdo (mais transparente) */
+.container {
+    width: 80%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.7); /* Transparência ajustada */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilizar o título */
+h1 {
+    color: #ff4081;
+    font-size: 26px;
+}
+
+/* Título "Amor," */
+.letter-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff4081;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Bloco de mensagem e foto */
+.message-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Alternar posição do conteúdo */
+.message-box.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Estilo do campo de mensagem */
+.text-box {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px dashed #999;
+    font-size: 18px;
+    font-family: 'Indie Flower', cursive;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Estilo das fotos (ajustando tamanhos iguais e garantindo que não fiquem cortadas) */
+.photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização do botão fixo no canto inferior direito */
+.music-button {
+    font-size: 1.4rem; /* Texto maior para melhor visibilidade */
+    padding: 22px 30px; /* Mais espaço interno, aumentando a altura */
+    width: auto; /* Ajusta-se ao conteúdo */
+    height: auto;
+    border-radius: 20px; /* Bordas arredondadas para um visual mais suave */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff66b2; /* Cor rosa */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre o ícone e o texto */
+    line-height: 1.5; /* Ajusta a altura do texto */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.music-button:hover {
+    transform: scale(1.1);
+    background-color: #ff3385; /* Cor um pouco mais escura no hover */
+}
+
+
+
+
+
+/* Mensagem final no fim da página */
+.letter-end {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff4081;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Animação do coração pulando */
+.heart {
+    display: inline-block;
+    animation: pulse 1.5s infinite alternate;
+}
+
+/* Definição da animação */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
