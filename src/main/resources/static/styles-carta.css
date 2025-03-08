@@ -1,27 +1,24 @@
-/* Definir o fundo com a imagem */
-body {
-    font-family: 'Indie Flower', cursive;
-    text-align: center;
+/* Garante que o fundo cubra toda a página */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     background: url('/fotos/fundorosa.jpg') no-repeat center center fixed;
     background-size: cover;
-    margin: 0;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
-
-/* Caixa principal do conteúdo (mais transparente) */
+/* Garante que o container principal ocupe pelo menos a altura total */
 .container {
+    min-height: 100vh;
     width: 80%;
     max-width: 800px;
-    background: rgba(255, 255, 255, 0.7); /* Transparência ajustada */
+    background: rgba(255, 255, 255, 0.7);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Estilizar o título */
 h1 {
