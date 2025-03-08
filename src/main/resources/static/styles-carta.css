@@ -1,4 +1,4 @@
-/* Garante que o fundo cubra toda a página */
+/* Garante que o fundo cubra toda a página corretamente */
 html, body {
     height: 100%;
     width: 100%;
@@ -6,9 +6,11 @@ html, body {
     padding: 0;
     background: url('/fotos/fundorosa.jpg') no-repeat center center fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Garante que o container principal ocupe pelo menos a altura total */
+/* Garante que o container principal ocupe pelo menos a altura total da tela */
 .container {
     min-height: 100vh;
     width: 80%;
@@ -17,7 +19,17 @@ html, body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    flex-grow: 1; /* Garante que o conteúdo expanda corretamente */
 }
+
+/* Corrige a quebra do fundo no celular */
+@media screen and (max-width: 768px) {
+    html, body {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+}
+
 
 
 /* Estilizar o título */
